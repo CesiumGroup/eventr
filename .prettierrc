@@ -1,0 +1,10 @@
+{
+  "semi": false,
+  "arrowParens": "always",
+  "singleQuote": false,
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "pluginSearchDirs": false
+}
