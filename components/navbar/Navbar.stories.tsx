@@ -2,10 +2,15 @@ import { ComponentMeta, ComponentStory } from "@storybook/react"
 
 import { Navbar } from "./Navbar"
 
-export default {
-  title: "Testing/Navbar",
-  component: Navbar,
-} as ComponentMeta<typeof Navbar>
+import {
+  ArgsTable,
+  Description,
+  Primary,
+  PRIMARY_STORY,
+  Stories,
+  Subtitle,
+  Title,
+} from "@storybook/addon-docs"
 
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />
 
@@ -20,3 +25,22 @@ export const Logged = Template.bind({})
 Logged.args = {
   loggedIn: true,
 }
+
+export default {
+  title: "Testing/Navbar",
+  component: Navbar,
+  parameters: {
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Subtitle />
+          <Description />
+          <Primary />
+          <ArgsTable story={PRIMARY_STORY} />
+          <Stories />
+        </>
+      ),
+    },
+  },
+} as ComponentMeta<typeof Navbar>
