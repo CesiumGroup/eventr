@@ -4,7 +4,7 @@
 
 @layer components {
   .screen-section {
-    @apply min-h-screen w-screen bg-slate-50 dark:bg-black;
+    @apply min-h-screen w-screen bg-slate-50 text-black dark:bg-black dark:text-white;
   }
 }
 
