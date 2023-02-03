@@ -3,7 +3,7 @@ import ticketImg from "@/public/img/eventr-ticket-preview.png"
 import { useTranslation } from "next-i18next"
 import { serverSideTranslations } from "next-i18next/serverSideTranslations"
 import Image from "next/image"
-import { GetServerSideProps } from "next/types"
+import type { GetServerSideProps } from "next/types"
 
 export const getServerSideProps: GetServerSideProps = async ({
   locale,
