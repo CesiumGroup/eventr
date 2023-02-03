@@ -5,7 +5,7 @@ import type { AppProps } from "next/app"
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <div className="dark overflow-x-hidden">
+    <div className=" overflow-x-hidden">
       <Navbar loggedIn={false} />
       <Component {...pageProps} />
     </div>
